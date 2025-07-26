@@ -55,6 +55,7 @@ server/
    MONGODB_URI=your_mongodb_connection_string
    
 4. **Start the Server**
+   ```bash
      npm start
 
 ## 📡 API Endpoints
