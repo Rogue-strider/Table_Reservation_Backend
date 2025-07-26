@@ -66,7 +66,7 @@ Locks a table for a specified duration (in seconds).
   "tableId": "table-123",
   "userId": "user-abc",
   "duration": 60
-}
+}```
 **Response:
 ```json
 {
