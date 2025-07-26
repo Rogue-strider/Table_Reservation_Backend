@@ -53,25 +53,70 @@ server/
      Create a .env file in the root and add:
    ```ini
    MONGODB_URI=your_mongodb_connection_string
-   ```b
+   
 4. **Start the Server**
      npm start
 
 ## 📡 API Endpoints
+
 **🔐 POST /api/tables/lock
 Locks a table for a specified duration (in seconds).
-**Request Body:
+**Request Body:**
 ```json
 {
   "tableId": "table-123",
   "userId": "user-abc",
   "duration": 60
 }
-
-`**Response:`.
+```
+**Response:**
 ```json
 {
   "success": true,
   "message": "Table locked successfully."
 }
+```
 
+**🔐 POST /api/tables/unlock
+Unlocks a table if the requesting user is the one who originally locked it.
+**Request Body:**
+```json
+{
+  "tableId": "table-123",
+  "userId": "user-abc"
+}
+```
+**Response:**
+```json
+{
+  "success": true,
+  "message": "Table unlocked successfully."
+}
+```
+
+**📊 GET /api/tables/:tableId/status
+Checks whether the table is currently locked or not.
+**Response:**
+```json
+{
+  "isLocked": true
+}
+or
+{
+  "isLocked": false
+}
+```
+
+##🧪 Postman Collection
+A Postman collection is provided to demonstrate testing procedures for all endpoints.
+**✅ To Use:**
+1.Open Postman
+2.Import the file: TableReservation.postman_collection.json
+3.Test the following:
+   - Lock a table
+   - Unlock a table
+   - Check table lock status
+   - Verify lock expiry handling
+
+## 📬 Contact
+For any queries or contributions, feel free to open issues or pull requests. Happy coding! 🎉
