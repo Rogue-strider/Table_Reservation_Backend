@@ -59,7 +59,7 @@ server/
 
 ## 📡 API Endpoints
 
-**🔐 POST /api/tables/lock
+**🔐 POST /api/tables/lock**
 Locks a table for a specified duration (in seconds).
 **Request Body:**
 ```json
@@ -77,7 +77,7 @@ Locks a table for a specified duration (in seconds).
 }
 ```
 
-**🔐 POST /api/tables/unlock
+**🔐 POST /api/tables/unlock**
 Unlocks a table if the requesting user is the one who originally locked it.
 **Request Body:**
 ```json
@@ -94,7 +94,7 @@ Unlocks a table if the requesting user is the one who originally locked it.
 }
 ```
 
-**📊 GET /api/tables/:tableId/status
+**📊 GET /api/tables/:tableId/status**
 Checks whether the table is currently locked or not.
 **Response:**
 ```json
