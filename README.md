@@ -67,8 +67,8 @@ Locks a table for a specified duration (in seconds).
   "userId": "user-abc",
   "duration": 60
 }
-<br/>
-**Response:
+
+`**Response:`.
 ```json
 {
   "success": true,
