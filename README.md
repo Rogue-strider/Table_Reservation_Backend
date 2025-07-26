@@ -25,17 +25,17 @@ A simple Node.js + Express REST API to manage table locks for reservation purpos
 ---
 
 ## 📁 Project Structure
-server/
-├── controllers/
-│ └── table.controller.js
-├── models/
-│ └── lock.model.js
-├── routes/
-│ └── lock.routes.js
-├── utils/
-│ └── db.js
-├── .env
-├── index.js
+server/<br>
+├── controllers/<br>
+│ └── table.controller.js<br>
+├── models/<br>
+│ └── lock.model.js<br>
+├── routes/<br>
+│ └── lock.routes.js<br>
+├── utils/<br>
+│ └── db.js<br>
+├── .env<br>
+├── index.js<br>
 
 
 ---
