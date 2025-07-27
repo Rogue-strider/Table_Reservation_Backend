@@ -101,8 +101,9 @@ Checks whether the table is currently locked or not.<br><br>
 ```json
 {
   "isLocked": true
-}
+}```
 or
+```json
 {
   "isLocked": false
 }
